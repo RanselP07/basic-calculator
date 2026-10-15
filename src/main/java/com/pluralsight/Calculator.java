@@ -6,6 +6,11 @@ public class Calculator {
     static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        char add = 'A';
+        char subtract = 'S';
+        char multiply = 'M';
+        char divide = 'D';
+
 
         System.out.print("Enter the first number: ");
         int firstNumber = scanner.nextInt();
@@ -20,7 +25,10 @@ public class Calculator {
         System.out.println("  (S)ubtract");
         System.out.println("  (M)ultiply");
         System.out.println("  (D)ivide");
-        System.out.println("Please select an option: M");
+        System.out.print("Please select an option: ");
+        String choose = scanner.next();
+
+
         System.out.println();
         System.out.println(firstNumber + " * " + secondNumber + " = " + result);
 
